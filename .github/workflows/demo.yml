@@ -28,7 +28,7 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: dist-fles
+          name: dist-files
           path: dist
           # path: |
           #   dist
@@ -40,7 +40,7 @@ jobs:
       - name: Get Build Artifacts
         uses: actions/download-artifact@v3
         with:
-          name: dist-fles
+          name: dist-files
       - name: Output content
         run: ls
       - name: Deploy
